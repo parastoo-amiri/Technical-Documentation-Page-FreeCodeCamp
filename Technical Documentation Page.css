@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --text-header:#212529;
+    --color-text:#495057;
+    --background-code:#F8F9FA;
+}
+body{
+    font-family: sans-serif;
+}
+/* START HEADER */
+nav {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    overflow-y: auto;
+    border-right: 1px solid;
+    position: fixed;
+}
+header#header-nav {
+    padding: 3.2vh;
+    font-size: 3vw;
+    color: var(--text-header);
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    width: 100%;
+    list-style-type: none;
+    height: 63vw;
+}
+a {
+    color: var(--color-text);
+    border-bottom: 1px solid;
+    padding: 1vw 0 1vw 3vw;
+    font-size: 1.8vw;
+}
+/* END HEADER */
+
+/* *********************************************************************
+FOR ALL SECTIONS
+********************************************************************* */
+header {
+    font-size: 3vw;
+    color: var(--text-header);
+}
+p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    color: var(--color-text);
+    padding-left: 3vw;
+    padding-right: 2vw;
+}
+#introduction ul,#what-you-know ul,#data-types ul,#while-statement ul,#function-declarations ul,#reference ul{
+    list-style-type: disc;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    padding-left: 9.5vw;
+    padding-right: 2vw;
+    color: var(--color-text);
+    height: auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: absolute;
+    left: 34vw;
+    gap: 2vw;
+    padding-top: 3vw;
+}  
+code{
+    background-color: var(--background-code);
+    font-size: 1.3vw;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1vw 2vw;
+    line-height: 2vw;
+    border-radius: 10px;
+    font-family: monospace;
+}
+/* *********************************************************************
+FOR ALL SECTIONS
+********************************************************************* */
+
+/* START INTRODUCTION SECTION */
+section#introduction {top: 0;}
+/* END INTRODUCTION SECTION */
+/* START WHAT YOU KNOW SECTION */
+section#what-you-know {top: 56vw;}
+/* END WHAT YOU KNOW SECTION */
+/* START JAVASCRIPT & JAVA SECTIION */
+section#javascript-java {top: 81vw;}
+/* END JAVASCRIPT & JAVA SECTION */
+/* START HELLO WORLD SECTION */
+section#hello-world {top: 134vw;}
+/* END HELLO WORLD SECTION */
+/* START VARIABLES SECTIONS */
+section#variables {top: 159vw;}
+/* END VARIABLES SECTION */
+/* START DECLARING-VARIABLES SECTION */
+section#declaring-variables {top: 191vw;}
+/* END DECLARING-VARIABLES SECTION */
+/* START VARIABLE SCOPE SECTION */
+section#variable-scope {top: 249vw;}
+/* END VARIABLE SCOPE SECTION */
+/* START GLOBAL VARIABLES SECTION */
+section#global-variables {top: 299vw;}
+/* END GLOBAL VARIABLES SECTION */
+/* START CONSTANTS SECTION */
+section#constants {top: 325vw;}
+/* END CONSTANTS SECTION */
+/* START DATA TYPES SECTION */
+section#data-types {top: 393vw;}
+ul#second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vw;
+    list-style-type: circle;
+    padding-left: 6vw;
+    height: auto;
+}
+/* END DATA TYPES SECTION */
+/* START IF...ELSE STATEMENT SECTION */
+section#if-else-statement {top: 452.5vw;}
+/* END IF...ELSE STATEMENT SECTION */
+/* START WHILE STATEMENT section */
+section#while-statement {top: 554vw;}
+/* END WHILE STATEMENT section */ 
+/* START FUNCTION DECLARATIONS */
+section#function-declarations {top: 633vw;}
+/*END FUNCTION DECLARATIONS */
+/* START REFERENCE SECTION */
+section#reference {
+    top: 699vw;
+    padding-bottom: 3vw;
+}
+a.reference{
+    text-decoration: underline;
+    border: none;
+    padding: 0;
+}
+/* END REFERENCE SECTION */
+/* START MEDIA QUERY FOR MAX-WIDTH 768PX */
+@media all and (max-width:768px){
+    nav {height: 100%;}
+    header#header-nav {padding: 1.2vh;}
+    ul {
+        height: 100%;
+        gap: 1.8vw;
+    }
+    a {
+        padding: 2vw 0 2vw 3vw;
+        font-size: 2.5vw;
+    }
+}
